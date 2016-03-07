@@ -26,7 +26,7 @@ class Utilities {
     return array.difference(localBranches, remoteBranches);
   }
 
-  remoteBranchesOnly(branchType) {
+  remoteOnlyBranches(branchType) {
     const remoteBranches = this.remoteBranches(branchType);
     const localBranches = this.localBranches(branchType);
     return array.difference(remoteBranches, localBranches);
