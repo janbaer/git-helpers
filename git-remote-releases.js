@@ -3,5 +3,5 @@
 require('shelljs/global');
 const utilities = require('./utilities');
 
-const branches = utilities.remoteOnlyBranches('release')
+const branches = utilities.remoteOnlyBranches('release');
 branches.forEach(branch => echo(branch));
